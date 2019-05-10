@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jens Jefsen - </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   
+    <header id="header">
+       <div id="video" class="video hide">
+       <div class="close-video" onclick="hide();">CLOSE</div>
+       <video id="video1" src="video/first_video.mp4" controls></video>
+   </div>
+        <div class="wrapper-header">
+            <h1>Jens Jefsen</h1>
+            <hr>
+            <div class="clearfix"></div>
+            <h2>Professional bass player, piano tuner and private jazz teacher.</h2>
+            <div class="playbtn" onclick="show();">
+                <img id="playtbn" src="images/play.png" alt="">
+            </div>
+
+        </div>
+        <div class="next-section"><a class="scroll" href="#story-in-pictures"><i class="fas fa-sort-down"></i></a></div>
+
+    </header>
+    <main>
+        <article id="story-in-pictures">
+           <audio id="audio" src="audio/audio.mp3"></audio>
+            
+            <div class="content-wrapper">
+               <div id="basscontainer">
+                    <img id="bass" src="images/bass.png" alt="">
+                <h2>My path as a <span>musician</span></h2>
+               </div>
+               
+                <div class="column1">
+                  
+                    <hr>
+                    <div class="clearfix"></div>
+                    <h3 id="quote">"I was playing the piano with one finger."</h3>
+                    <p id="story-text">Jens started his interest in music when he was only 4 years old. He started playing the piano during his time in kindergarden. </p>
+                </div>
+                <div class="column2">
+                  <div class="media-wrapper">
+                      <div class="image">
+                       <img id="story-image" src="images/piano.jpg" alt="">
+                   </div>
+                   <div id="next-story"><i class="fas fa-caret-right"></i></div>
+                  </div>
+                   <ul id="stories">
+                       <li><i class="far fa-circle fas"></i></li>
+                       <li><i class="far fa-circle"></i></li>
+                       <li><i class="far fa-circle"></i></li>
+                       <li><i class="far fa-circle"></i></li>
+                   </ul>
+                    
+                </div>
+
+            </div>
+            <div class="next-section"><a class="scroll" href="#inspiration"><i class="fas fa-sort-down"></i></a></div>
+        </article>
+        <article id="inspiration">
+           <h2>A few words about inspiration...</h2>
+            <div id="video2" class="video">
+       <video id="videoinsp" src="video/second_video.mp4" controls></video>
+   </div>
+        <div class="next-section"><a class="scroll" href="#performances"><i class="fas fa-sort-down"></i></a></div>
+        </article>
+        <article id="performances">
+          <h2>Live Performances</h2>
+           <div class="video-wrapper">
+               <iframe id="player" src="https://www.youtube.com/embed/wJeI-u6OgVc" frameborder="0"  allowfullscreen></iframe>
+               <div class="thumbnails">
+                   <img onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/wJeI-u6OgVc" src="images/thumbnail1.jpg" alt="">
+                   <img onclick="showPlayer(this)" data-link="https://www.youtube.com/embed/_70aKui81zk" src="images/thumbnail2.jpg" alt="">
+               </div>
+           </div>
+           <h3>Playing music is all about having fun and enjoying the moment with other people.</h3>
+            <div class="next-section"><a class="scroll" href="#contact"><i class="fas fa-sort-down"></i></a></i></div>
+        </article>
+        
+    </main>
+    <footer class="contact" id="contact">
+     <p>Adresse: <br>
+Ludvig Holbergs Vej 30 <br>
+8230 Åbyhøj – DK <bre></bre>
+
+Ring til Jens Jefsen på mobil 40 44 51 66. <br>
+eller mail til: mail@jensjefsen.dk</p>
+      <form name="contactUs">
+          <h2>Contact me</h2>
+
+      <div class="group">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="group">
+        <div class="icon"><i class="fas fa-quote-right"></i></div>
+
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="group">
+        <div class="icon"><i class="fas fa-comment"></i></div>
+
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+
+      <input id="submit" type="submit" value="Send">
+
+    </form>
+    <div class="next-section"><a class="scroll" href="#header"><i class="fas fa-sort-up"></i></a></i></div>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+     
+
+</body>
+
+</html>

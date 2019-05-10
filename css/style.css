@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: black;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    z-index: 98;
+}
+
+video {
+    height: 94vh;
+    width: 100%;
+    background-color: black;
+}
+
+.close-video {
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.3em;
+    z-index: 99;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.close-video:hover {
+    background-color: #ececec;
+    transition: .5s;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/jens-cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper-header {
+    margin: 0 auto;
+    width: min-content;
+    padding-top: 10vh;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8em;
+    color: white;
+    text-align: center;
+    line-height: 1em;
+
+}
+
+hr {
+    border: solid white 5px;
+    width: 50px;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    color: whitesmoke;
+    font-weight: 100;
+    text-align: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.playbtn {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.playbtn img {
+    width: 70px;
+}
+
+.next-section {
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.3em;
+    z-index: 99;
+
+}
+
+.next-section a {
+    color: black;
+    text-decoration: none;
+}
+
+.next-section:hover {
+    height: 4vh;
+    transition: .5s;
+}
+
+article {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ececec;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#basscontainer {
+    position: relative;
+    width: 20%;
+
+}
+
+#bass {
+    height: 100%;
+    float: left;
+}
+
+#basscontainer h2 {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 5%;
+    font-size: 4em;
+    left: 50%;
+    line-height: 1em;
+    color: #222222;
+    letter-spacing: 2px;
+}
+
+#basscontainer h2 span {
+    color: #ed1c24;
+}
+
+.column1 {
+    margin-top: 30vh;
+    width: 40%;
+}
+
+.column1 h3 {
+    color: #222222;
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 1em;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.column1 p {
+    text-align: justify;
+}
+
+.column2 {
+    margin-top: 10vh;
+    width: 40%;
+}
+
+.column2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 15%;
+}
+
+
+
+.media-wrapper {
+    height: 80%;
+    width: min-content;
+    margin: 0 auto;
+    display: flex;
+}
+
+.image {
+    height: 100%;
+    width: min-content;
+}
+
+.image img {
+    height: 100%;
+}
+
+#next-story {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 100%;
+    width: 15px;
+    background-color: #b7b7b7;
+    font-size: 1.3em;
+}
+
+#next-story:hover {
+    color: red;
+    border-right: 1px solid red;
+
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+#inspiration {
+    background-color: black;
+}
+
+#inspiration h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #ececec;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding: 5px;
+    text-align: center;
+}
+
+#video2 {
+    position: initial;
+    height: 90%;
+}
+#video2 video{
+    height: 90vh;
+}
+
+#performances {
+    background-image: url(../images/cover-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-top: 2%;
+}
+
+.video-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+iframe {
+    width: 60%;
+    height: 315px;
+    z-index: 98;
+}
+
+.thumbnails {
+    height: 315px;
+    z-index: 99;
+}
+
+.thumbnails img {
+    cursor: pointer;
+    height: 49%;
+
+}
+
+#performances h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    line-height: 1em;
+    color: white;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+#performances h3 {
+    font-size: 6em;
+    font-weight: 200;
+    position: absolute;
+    bottom: 5%;
+    line-height: .8em;
+    color: rgba(237, 28, 36, 0.5);
+    padding: 0 5%;
+    text-align: justify;
+}
+
+footer {
+    position: relative;
+}
+
+.contact {
+    background-color: #ececec;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 15vh;
+    text-align: center;
+
+}
+
+form {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+
+form h1 {
+    text-align: center;
+    color: black;
+}
+
+.group {
+
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+input,
+textarea {
+    float: right;
+    width: 60%;
+    color: black;
+    padding: 1% 2%;
+    background: transparent;
+    border: 1px solid black;
+    border-left: none;
+    resize: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+    color: transparent;
+    transition: .5s;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    font-size: 1.2em;
+    color: black;
+
+}
+
+.icon {
+    color: black;
+    width: 20px;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    border-right: none;
+}
+
+#submit {
+    width: 25%;
+    justify-self: center;
+    color: black;
+    font-size: 1.2em;
+    border: 1px solid black;
+    transition: .2s;
+
+}
+
+#submit:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#submit:focus {
+    outline: none;
+}
+
+@media(max-width: 1000px) {
+    .content-wrapper {
+        display: block;
+    }
+
+    #bass {
+        display: none;
+    }
+
+    #basscontainer {
+        width: 100%;
+    }
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #basscontainer h2 {
+        position: initial;
+        text-align: center;
+        height: 10%;
+    }
+
+    .column1 {
+        width: 70%;
+        margin: 0 auto;
+        height: 45%;
+    }
+
+    .column2 {
+        width: 70%;
+        margin: 0 auto;
+        height: 50%;
+        ;
+    }
+
+    #next-story {
+        width: 50px;
+    }
+
+    #performances h3 {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        display: block;
+    }
+
+    .thumbnails {
+        display: flex;
+    }
+
+    .thumbnails img {
+        width: 50%;
+
+    }
+
+    .next-section {
+        height: 40px;
+    }
+
+    #inspiration h2 {
+        font-size: 2em;
+    }
+
+    #video2 {
+        background-color: black;
+        height: 90vh;
+
+    }
+
+    #video2 video {
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #basscontainer h2 {
+        font-size: 2em;
+    }
+
+    .column1 h3 {
+        font-size: 2em;
+    }
+
+    #performances h2 {
+        font-size: 3em;
+    }
+}
